@@ -14,6 +14,7 @@
   header {
     grid-area: header;
     grid-template-columns: 3;
+    height: 70px;
   }
     
   .logo {
@@ -28,19 +29,32 @@
   .login-register-container {
       grid-column: 2/3;
   }
-  
-  footer {
+  .page-content-wrapper {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "nav main";
+    grid-gap:1em;
+}
+.nav {
+    grid-area: nav;
+    border-right: 1px solid #006899;
+}
+.page-content {
+    grid-area: main;
+}
+.menu {
+    list-style-type: square square;
+}
+.menu_item {
+    padding:10px;
+}
+footer {
     grid-area: footer;
+    height:70px;
   }
   
-  input [type="password"],
-  input [type="text"],
-  input [type="submit"],
 
-  {
-    grid-area: footer;
-  }
-  
 
   .btn {
 	cursor:pointer;
@@ -176,4 +190,41 @@
        border-right:1px red;
 
   }
-   /* form styles end here */
+  .form-control {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:"label control";
+    grid-gap: 16px;
+}
+.form-control label{
+  grid-area:label;
+  grid-row: auto;
+  justify-self: end;
+  align-self: center;
+
+}
+
+.col-3{
+    width:30%;
+  
+}
+.col-6{
+    width:60%;
+  
+}
+.form-control input,
+.form-control button,
+.form-control textarea,
+.form-control .form-title
+
+{
+    grid-area:control;
+    grid-row: auto;
+
+  } 
+  .form-control textarea
+{
+   min-height: 100px;
+
+  } 
+/* form styles end here */

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iReporter | Register</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="bg-blue">
+                <div class="logo">iReporter logo</div>
+            </header>
+            <div class="main-page">
+                <div class="page-content-wrapper">
+                    <div class="nav">
+                        <ul class="menu">
+                            <li class="menu_item"><a href="profile.html" class="menu_link">Profile</a></li>
+                            <li class="menu_item"><a href="new_red-flag.html" class="menu_link">New Red Flag Record</a></li>
+                            <li class="menu_item"><a href="view_red-flags.html" class="menu_link">View Red Flag Records</a></li>
+                            <li class="menu_item"><a href="new_intervention.html" class="menu_link">New Intervention Record</a></li>
+                            <li class="menu_item"><a href="view_interventions.html" class="menu_link">view Intervention Records</a></li>
+                        </ul>
+                    </div>
+                    <div class="page-content">
+                        
+                        <form class="form-control col-6">
+                                <h3 class="text-blue form-title">New Red-flag Record</h3>                     
+                            
+                                <label for="offender_name">Name of Offender : </label>
+                                <input type="text" name="offender_name" id="offender_name" placeholder="FIRST NAME LAST NAME" class="input-control" required>
+
+                                <label for="victim_name">Name of Vicitim : </label>
+                                <input type="text" name="victim_name" id="victim_name" placeholder="FIRST NAME LAST NAME">
+                              
+                                <label for="incident_data">Incident Date : </label>
+                                <input type="date" name="incident_date" id="incident_date">
+                              
+                                <label for="details">Description </label>
+                                <textarea name="description" id="description" maxlength="800"></textarea>
+                            
+                        </form>
+                    </div>
+                  
+                </div>
+            </div>
+            <footer class="bg-blue">
+                <div class='footer'>
+                    iReporter&nbsp;&copy;2018
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+
