@@ -6,9 +6,6 @@ general public. Users can also report on things that needs government interventi
 
 - [link to user stories on Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2231809)
 - [link to the project source code on Git Hub](https://github.com/kalsmic/iReporter/tree/develop)
- <!--
-[link to the live project hosted on Git Hub pages](https://github.com/kalsmic/iReporter/tree/develop)
--->
-
+- [link to the live project hosted on Git Hub pages](https://kalsmic.github.io/iReporter/)
 
  
