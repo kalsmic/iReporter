@@ -25,7 +25,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   
-  .login-container {
+  .login-register-container {
       grid-column: 2/3;
   }
   
@@ -161,7 +161,19 @@
     border-bottom: 1px solid #888875;
     background: transparent;
    }
+   input:required:invalid, input:focus:invalid {
+    -moz-box-shadow: none;
+    border-right:1px red;
 
+  }
 
-  
+  input:required:invalid, input:focus:invalid {
+    background-image: url(../static/img/invalid.png);
+    border-right:1px green;
+  }
+
+  input:required:valid {
+       border-right:1px red;
+
+  }
    /* form styles end here */
