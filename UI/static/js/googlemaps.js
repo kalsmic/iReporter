@@ -2,7 +2,7 @@ var marker
 
 function myMap() {
     var mapProp = {
-        center:new google.maps.LatLng(0.342240,32.589700),
+        center:new google.maps.LatLng(0.580584670867283,32.53452250031705),
 
         zoom: 9,
     };

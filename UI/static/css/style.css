@@ -176,6 +176,10 @@ footer {
 }
 
 @media screen and (min-width:700px) {
+    .nav {
+    max-height: 50vh;
+ 
+}
     .menu {
         flex-direction: column;
         
