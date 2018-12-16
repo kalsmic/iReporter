@@ -1,4 +1,4 @@
-
+<!-- user profile page -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>iReporter | Profile</title>
         <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/table.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
     </head>
     <body>
         <div class="wrapper">
@@ -15,7 +18,7 @@
             </header>
             <div class="main-page">
                 <div class="page-content-wrapper">
-                    <div class="nav">
+                    <div class="nav border-round-lg">
                         <ul class="menu">
                             <li class="menu_item"><a href="profile.html" class="menu_link">Profile</a></li>
                              <li class="menu_item"><a href="new_incident.html" class="menu_link">Create Incident</a></li>
@@ -24,18 +27,80 @@
                             <li class="menu_item"><a href="view_interventions.html" class="menu_link">view Intervention</a></li>
                         </ul>
                     </div>
-                    <div class="page-content">
-                   
-                      <h3 class="text-blue">Profile page</h3>
-                    </div>
+                    <div class="page-content profile border-round-lg">
+                        <span class="dashboard-title">
+                            <h3 class="text-blue ">Profile page</h3>
+                        </span>
+                        <div class="dashboard-left">
+                            <h3 class="text-red">
+                                <i class="fa fa-flag text-lred" aria-hidden="true">&nbsp;</i>
+                                Red-flags
+                            </h3>
+                            <div class="dashboard-items">
+                                <div class="dash bg-lyellow text-orange">
+                                    <div class="dash-stat bg-orange">12
+                                        </div>
+                                    <div>Draft</div>
+                                </div>
+                                <div class="dash bg-lblue text-blue">
+                                    <div class="dash-stat bg-blue">3</div>
+                                    <div> Under Investigation</div>
+                                </div>
+                                <div class="dash bg-lgreen text-green">
+                                    <div class="dash-stat bg-green">23</div>
+                                    <div>Resolved</div>
+                                </div>
+                                <div class="dash bg-pink text-red">
+                                    <div class="dash-stat bg-red">1</div>
+                                    <div>Rejected</div>
+                                </div>
+                            </div>
+                        </div>
                   
+                        <div class="dashboard-center">
+                            <h3 class="text-green"> 
+                                <i class="fa fa-cubes text-green" aria-hidden="true">&nbsp;</i>
+                                Interventions
+                            </h3>
+    
+                            <div class="dashboard-items">
+                                <div class="dash bg-lyellow text-orange">
+                                    <div class="dash-stat bg-orange">1</div>
+                                    <div>Draft</div>
+                                </div>
+                                <div class="dash bg-lblue text-blue">
+                                    <div class="dash-stat bg-blue">7</div>
+                                    <div>Under Investigation</div>
+                                </div>
+                                <div class="dash bg-lgreen text-green">
+                                    <div class="dash-stat bg-green">26</div>
+                                    <div>Resolved</div>
+                                </div>
+                                <div class="dash bg-pink text-red">
+                                    <div class="dash-stat bg-red">1</div>
+                                    <div>Rejected</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-right bg-lblue text-white">
+                            <img src="../static/img/profile-pics/user1.png" class="img-profile" alt="profile picture">
+                            <p>USername: Kalsmic</p>
+                            <p>First Name: Arthur</p>
+                            <p>Last Name: Kalule</p>
+                            <p>Tel: +256772019937</p>
+                            <p>Email: kalulearthur@gmail.com</p>
+                            <span>
+                                <i class="fa fa-cog text-blue" aria-hidden="true">Settings</i>
+                                <i class="fa fa-key text-blue" aria-hidden="true">Change password</i>
+                            </span>
+                        </div>
+
+
+                    </div>
+                    
                 </div>
             </div>
-            <footer class="bg-blue">
-                <div class='footer'>
-                    iReporter&nbsp;&copy;2018
-                </div>
-            </footer>
+         
         </div>
     </body>
 </html>
