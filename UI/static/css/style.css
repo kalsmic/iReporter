@@ -14,7 +14,7 @@
 
 .wrapper {
 	display: grid;
-	grid-template-areas: "header" "main-page";
+	grid-template-areas: "header" "main-page" "footer";
 	grid-gap: 20px;
 	min-height: 100vh;
 }
@@ -24,7 +24,11 @@ header {
 	height: 70px;
 	background: #AFD275;
 }
-
+footer {
+	grid-area: footer;
+	height: 70px;
+	background: #AFD275;
+}
 .logo {
 	grid-column: span 3;
 }
@@ -244,6 +248,12 @@ input:required:valid {
     text-align: justify;
     color:var(--blue);
 
+}
+.border-radius-30p{
+
+background: #7875d20a;
+padding: 1em;
+border-radius: 1.8em;
 }
 .dash-stat {
     border-radius: 50%;
