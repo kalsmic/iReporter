@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iReporter | Register</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="bg-blue">
+                <div class="logo">iReporter logo</div>
+            </header>
+            <div class="main-page">
+                <div class="page-content-wrapper">
+                    <div class="nav border-round-lg">
+                        <ul class="menu">
+                            <li class="menu_item"><a href="profile.html" class="menu_link">Profile</a></li>
+                            <li class="menu_item"><a href="new_incident.html" class="menu_link">New Incident</a></li>
+                            <li class="menu_item"><a href="view_red-flags.html" class="menu_link">View Red Flag Records</a></li>
+                         
+                            <li class="menu_item"><a href="view_interventions.html" class="menu_link">view Intervention Records</a></li>
+                        </ul>
+                    </div>
+                    <div class="page-content">
+
+                        <form class="form-control border-round-lg">
+                                <h3 class="text-blue form-title">New Incicent Record</h3>
+                                 <label for="incident_type">Type of Incident : </label>
+                                 <select id="pet-select">
+                                 <option value="">Please Select Incident type</option>
+                                <option value="Red-flag">Red-flag</option>
+                                <option value="Intervention">Intervention</option>
+                              
+                                 </select> 
+
+                         
+                                <label for="details">Description </label>
+                                <textarea name="description" id="description" maxlength="800"></textarea>
+                                <label>Geo Cordinates</label>
+                                <input type="text"  disabled id="set_location" placeholder="pick location from map">
+
+                                <label>Location Coordinates: </label>
+                                <div id="googleMap" style="height: 400px; width:100%"></div>
+                                <input type="submit" value="Add Incident Record" class="btn bg-green text-white">
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="bg-blue">
+                <div class='footer'>
+                    iReporter&nbsp;&copy;2018
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../static/js/googlemaps.js"></script>
+
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWKk6emaNSe8Z3YpMt8lhwJ_tvH6WFOv4&callback=myMap"></script>
+
+</html>
