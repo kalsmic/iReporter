@@ -1,3 +1,16 @@
+document.getElementById("login-form").onsubmit=function() {
+    var userName = document.getElementById("userName").value;
+    if (userName =="admin") {
+     
+    window.location.replace("admin/profile.html");
+    return false;
+    }else{
+        window.location.replace("user/profile.html");
+        return false;
+    } 
+ }  
+
+
 function deleteIncident(incidentType, delStatus, hideContent) {
 
     if (delStatus == 1) {
