@@ -63,11 +63,13 @@ footer {
 }
 
 .menu {
-	list-style-type: square square;
+    list-style-type: none;
 }
 
 .menu_item {
-	padding: 10px;
+    padding: 10px;
+    color: var(--black);
+    
 }
 
 /* form styles start */
@@ -134,7 +136,6 @@ input:required:valid {
    
 	.menu {
 		display: flex;
-		list-style-type: none;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -203,7 +204,6 @@ input:required:valid {
 
 	.dashboard-title {
 		grid-area: dash-hd;
-		border-bottom: 2px solid blue;
 	}
 
 	.dashboard-left {
@@ -265,4 +265,7 @@ input:required:valid {
 
 fieldset {
 	border: none;
+}
+hr {
+border: 2px solid var(--blue);
 }
