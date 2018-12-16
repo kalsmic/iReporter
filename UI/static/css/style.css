@@ -169,8 +169,7 @@ input:required:valid {
 
 @media screen and (min-width:700px) {
 	.nav {
-		max-height: 50vh;
-		overflow: hidden;
+        height: fit-content;
 	}
 
 	.menu {
