@@ -310,6 +310,7 @@ hr {
 	justify-content: space-between;
 	flex-direction: column;
 	margin: 1em;
+	flex-wrap: wrap;
 }
 
 .flex-row-sp-btn {
@@ -319,4 +320,9 @@ hr {
 	align-content: center;
 	padding: 1.25em;
 	align-content: justify;
+	flex-wrap: wrap;
+}
+.img-circle-small {
+	border-radius: 50%;
+	width: 10%;
 }
