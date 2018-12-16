@@ -33,7 +33,19 @@ footer {
 
 .logo {
 	grid-column: span 3;
+	margin: 20px;
+	color: white;
+
 }
+
+.logo span:nth-child(odd),
+
+	{
+	color: rebeccapurple;
+
+}
+
+
 
 .main-page {
 	grid-area: main-page;
@@ -322,6 +334,7 @@ hr {
 	align-content: justify;
 	flex-wrap: wrap;
 }
+
 .img-circle-small {
 	border-radius: 50%;
 	width: 10%;
