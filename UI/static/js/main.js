@@ -1,11 +1,19 @@
-function deleteIncident(incidentType, delStatus) {
+function deleteIncident(incidentType, delStatus, hideContent) {
 
     if (delStatus == 1) {
         if (confirm("Are you sure you want to delete this record!")) {
+
+            secId = document.getElementById("sec-1")
             switch (incidentType) {
                 case "red-flag":
-                    window.location.href = "https://kalsmic.github.io/iReporter/UI/user/view_red-flags.html";
-                    break;
+                    if (hideContent == "true") {
+                        secId.style.display = "none";
+                        break;
+
+                    } else {
+                        window.location.href = "https://kalsmic.github.io/iReporter/UI/user/view_red-flags.html";
+                        break;
+                    }
                 case "intervention":
                     window.location.href = "https://kalsmic.github.io/iReporter/UI/user/view_interventions.html";
                     break;
