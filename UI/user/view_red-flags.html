@@ -1,114 +1,128 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>iReporter | Red-flags</title>
-        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-        <link rel="stylesheet" type="text/css" href="../static/css/table.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="bg-blue">
-                <div class="logo">iReporter logo</div>
-                <a href="../index.html" id='log_out' class="btn text-white">Log out</a>
-            </header>
-            <div class="main-page">
-                <div class="page-content-wrapper">
-                    <div class="nav border-round-lg">
-                        <ul class="menu">
-                            <li class="menu_item"><a href="profile.html" class="menu_link">Profile</a></li>
-                           <li class="menu_item"><a href="new_incident.html" class="menu_link">Create Incident</a></li>
-                           <li class="menu_item"><a href="view_red-flags.html" class="menu_link">View Red Flags</a></li>
-                            <li class="menu_item"><a href="new_intervention.html" class="menu_link">New Intervention</a></li>
-                            <li class="menu_item"><a href="view_interventions.html" class="menu_link">view Intervention</a></li>
-                        </ul>
-                    </div>
-                    <div class="page-content border-round-lg">
-                        <h3 class="text-blue">View Red-flags page</h3>
-                        <div class="table">
-                            <table>
-                                
-                                <thead>
-                                    <tr>
-                                        <th>Description</th>
-                                        <th>Created On</th>
-                                        <th>Status</th>
-                                        <th>Location</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                        <td>12/12/2018</td>
-                                        <td>draft</td>
-                                        <td>0.34,32.52</td>
-                                        <td>
-                                            <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
-                                            <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                            <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sed accumsan nisl in purus luctus, vel molestie enim tempus.</td>
-                                        <td>12/12/2018</td>
-                                        <td>unresolved</td>
-                                        <td>12.23,12.23</td>
-                                        <td>
-                                            <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
-                                            <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                            <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                        </td>
-                                    </tr>                            
-                                    <tr>
-                                        <td>Nam vel dolor sagittis augue iaculis egestas vitae et leo.</td>
-                                        <td>12/12/2018</td>
-                                        <td>resolved</td>
-                                        <td>12.23,12.23</td>
-                                        <td>
-                                            <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
-                                            <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                            <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cras scelerisque turpis id gravida porta.</td>
-                                        <td>12/12/2018</td>
-                                        <td>under investigation</td>
-                                        <td>12.23,12.23</td>
-                                        <td>
-                                            <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
-                                            <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                            <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sed eu odio a nibh tincidunt dapibus at ultrices dolor.</td>
-                                        <td>12/12/2018</td>
-                                        <td>rejected</td>
-                                        <td>12.23,12.23</td>
-                                        <td>
-                                            <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
-                                            <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                            <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                        </td>
-                                    </tr>                                    
-                                </tbody> 
-                            </table>                              
-                        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iReporter | Red-flags</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/table.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="bg-blue">
+            <div class="logo">iReporter logo</div>
+            <a href="../index.html" id='log_out' class="btn text-white">Log out</a>
+        </header>
+        <div class="main-page">
+            <div class="page-content-wrapper">
+                <div class="nav border-round-lg">
+                    <ul class="menu">
+                        <li class="menu_item">
+                            <a href="profile.html" class="menu_link">
+                                <i class="fa fa-user" aria-hidden="true"> Profile</i>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="new_incident.html" class="menu_link">
+                                <i class="fa fa-plus" aria-hidden="true"> Incident</i>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="view_red-flags.html" class="menu_link active">
+                                <i class="fa fa-eye" aria-hidden="true"> RedFlags</i>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="view_interventions.html" class="menu_link">
+                                <i class="fa fa-eye" aria-hidden="true"> Interventions</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-content border-round-lg">
+                    <h3 class="text-blue">View Red-flags page</h3>
+                    <hr>
+                    <div class="table">
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Created On</th>
+                                    <th>Status</th>
+                                    <th>Location</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                    <td>12/12/2018</td>
+                                    <td>draft</td>
+                                    <td>0.34,32.52</td>
+                                    <td>
+                                        <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
+                                        <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
+                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sed accumsan nisl in purus luctus, vel molestie enim tempus.</td>
+                                    <td>12/12/2018</td>
+                                    <td>draft</td>
+                                    <td>12.23,12.23</td>
+                                    <td>
+                                        <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
+                                        <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
+                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nam vel dolor sagittis augue iaculis egestas vitae et leo.</td>
+                                    <td>12/12/2018</td>
+                                    <td>resolved</td>
+                                    <td>12.23,12.23</td>
+                                    <td>
+                                        <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
+                                        <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
+                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cras scelerisque turpis id gravida porta.</td>
+                                    <td>12/12/2018</td>
+                                    <td>under investigation</td>
+                                    <td>12.23,12.23</td>
+                                    <td>
+                                        <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
+                                        <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
+                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sed eu odio a nibh tincidunt dapibus at ultrices dolor.</td>
+                                    <td>12/12/2018</td>
+                                    <td>rejected</td>
+                                    <td>12.23,12.23</td>
+                                    <td>
+                                        <a href="edit-red-flag.html"><i class="fas fa-eye"></i></a>
+                                        <a href="edit-incident.html"><i class="fas fa-edit text-lblue"></i></a>
+                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <footer class="bg-blue">
-                <div class='footer'>
-                    iReporter&nbsp;&copy;2018
-                </div>
-            </footer>
         </div>
-    </body>
-</html>
 
+    </div>
+</body>
+
+</html>
