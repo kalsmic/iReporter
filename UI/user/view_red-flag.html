@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iReporter | Red-flags</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/table.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="bg-blue">
+            <div class="logo">iReporter logo</div>
+            <a href="../index.html" id='log_out' class="btn text-white">Log out</a>
+        </header>
+        <div class="main-page">
+            <div class="page-content-wrapper">
+                <div class="nav border-round-lg">
+                    <h3 class="text-blue">Welcome User</h3>
+                    <hr>
+
+                    <ul class="menu border-radius-30p">
+
+                        <li class="menu_item">
+                            <a href="profile.html" class="menu_link">
+                                <i class="fa fa-user" aria-hidden="true"> Profile</i>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="new_incident.html" class="menu_link">
+                                <i class="fa fa-plus" aria-hidden="true"> Incident</i>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="view_red-flags.html" class="menu_link active">
+                                <i class="fa fa-eye" aria-hidden="true"> RedFlags</i>
+                            </a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="view_interventions.html" class="menu_link">
+                                <i class="fa fa-eye" aria-hidden="true"> Interventions</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-content border-round-lg">
+                    <h3 class="text-blue">View Red-flag Details page</h3>
+                    <hr>
+                    <section class="flex-col-sp-btn border-radius-30p border-round-lg">
+                        <div><b>Description : </b>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                            augue sed bibendum tristique, dui lacus elementum odio, non tincidunt lectus
+                            lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa tellus, sed
+                            tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu, in tincidunt justo
+                            interdum at. Duis scelerisque nibh ultrices suscipit varius. Proin quis risus
+                            id ipsum mollis fringilla vel et nisi. Pellentesque id risus gravida, tincidunt
+                            est in, efficitur ante. Maecenas ut nisi leo. Sed orci odio, volutpat ac imperdiet
+                            sed, lacinia non mi
+                        </div>
+                        <div id="googleMap" class="map-pct-50"></div>
+
+                        <div class="flex-row-sp-btn">
+                            <p class="text-blue"><b><i>Created On:</i> </b> 01/02/2018</p>
+                            <span>status: resolved</span>
+                            <a href="edit_red-flag.html"><i class="fas fa-edit text-white bg-blue border-radius-pct-50 ">
+                                </i> </a>
+                            <a onclick="deleteIncident('red-flag')"><i class="fas fa-trash-alt text-white border-radius-pct-50 bg-red">
+                                </i> </a>
+
+
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<style>
+
+
+</style>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/googlemaps.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWKk6emaNSe8Z3YpMt8lhwJ_tvH6WFOv4&callback=initMap"></script>
+
+
+</html>
