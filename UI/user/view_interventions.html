@@ -7,7 +7,8 @@
     <title>iReporter | Interventions</title>
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <link rel="stylesheet" type="text/css" href="../static/css/table.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
 
 </head>
 
@@ -20,7 +21,8 @@
         <div class="main-page">
             <div class="page-content-wrapper">
                 <div class="nav border-round-lg">
-                    <h3 class="text-blue">Welcome User</h3><hr>
+                    <h3 class="text-blue">Welcome User</h3>
+                    <hr>
 
                     <ul class="menu border-radius-30p">
                         <li class="menu_item">
@@ -46,81 +48,148 @@
                     </ul>
                 </div>
                 <div class="page-content border-round-lg">
-                    <h3 class="text-blue">View Interventions page</h3><hr>
-                    <div class="table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Description</th>
-                                    <th>Created On</th>
-                                    <th>Status</th>
-                                    <th>Location</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                    <td>12/12/2018</td>
-                                    <td>draft</td>
-                                    <td>0.34,32.52</td>
-                                    <td><a href="view_intervention.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sed accumsan nisl in purus luctus, vel molestie enim tempus.</td>
-                                    <td>12/12/2018</td>
-                                    <td>unresolved</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view_intervention.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Nam vel dolor sagittis augue iaculis egestas vitae et leo.</td>
-                                    <td>12/12/2018</td>
-                                    <td>resolved</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view_intervention.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Cras scelerisque turpis id gravida porta.</td>
-                                    <td>12/12/2018</td>
-                                    <td>under investigation</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view_intervention.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sed eu odio a nibh tincidunt dapibus at ultrices dolor.</td>
-                                    <td>12/12/2018</td>
-                                    <td>rejected</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view-intervention.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <h3 class="text-blue">View Interventions page</h3>
+                    <hr>
+
+                   
+
+                    <section class="flex-col-sp-btn border-radius-30p border-round-lg">
+
+                        <div class="flex-row-sp-btn">
+                            <p class="text-blue"><b>No. 1 <i>Date:</i> </b> 01/03/2018</p>
+
+                            <p class="text-blue"><b>status: <i>draft</i></b></p>
+
+                            <span class="text-lblack">
+
+                                <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                1
+                            </span>
+                            <a href="./view_intervention.html" class="text-blue">view details</a>
+                            <a onclick="deleteIncident('red-flag',1)"><i class="fas fa-trash-alt text-red "></i></a>
+
+                        </div>
+                        <div><b>Description : </b>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                            </p>
+                        </div>
+
+                    </section>
+                    <section class="flex-col-sp-btn border-radius-30p border-round-lg">
+
+                            <div class="flex-row-sp-btn">
+                               
+                                <p class="text-blue"><b>No. 2 <i>Date:</i> </b> 01/02/2018</p>
+                                <p class="text-red"><b>status: <i>Rejected</i></b></p>
+    
+                                <span class="text-lblack ">
+    
+                                    <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                    1
+                                </span>
+                                <a href="./view_intervention.html" class="text-blue">view details</a>
+                                <a onclick="deleteIncident('red-flag',0)"><i class="fas fa-trash-alt text-red "></i></a>
+    
+                            </div>
+                            <div><b>Description : </b>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                    augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                    tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                    tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                </p>
+                            </div>
+    
+                        </section>
+                        <section class="flex-col-sp-btn border-radius-30p border-round-lg">
+
+                                <div class="flex-row-sp-btn">
+                                   
+                                    <p class="text-blue"><b>No. 3 <i>Date:</i> </b> 01/02/2018</p>
+                                    <p class="text-orange"><b>status: <i>Under Investigations !
+                                    </i></b></p>
+        
+                                    <span class="text-lblack ">
+        
+                                        <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                        1
+                                    </span>
+                                    <a href="./view_intervention.html" class="text-blue">view details</a>
+                                    <a onclick="deleteIncident('red-flag',0)"><i class="fas fa-trash-alt text-red "></i></a>
+        
+                                </div>
+                                <div><b>Description : </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                        augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                        tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                        tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                    </p>
+                                </div>
+        
+                            </section>
+                            <section class="flex-col-sp-btn border-radius-30p border-round-lg">
+
+                                    <div class="flex-row-sp-btn">
+                                       
+                                        <p class="text-blue"><b>No. 4 <i>Date:</i> </b> 01/02/2018</p>
+                                        <p class="text-green"><b>status: <i>Resolved !
+                                        </i></b></p>
+            
+                                        <span class="text-lblack ">
+            
+                                            <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                            1
+                                        </span>
+                                        <a href="./view_intervention.html" class="text-blue">view details</a>
+                                        <a onclick="deleteIncident('red-flag',0)"><i class="fas fa-trash-alt text-red "></i></a>
+            
+                                    </div>
+                                    <div><b>Description : </b>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                            augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                            tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                            tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                        </p>
+                                    </div>
+            
+                                </section>
+                                <section class="flex-col-sp-btn border-radius-30p border-round-lg">
+
+                                        <div class="flex-row-sp-btn">
+                                            <p class="text-blue"><b>No. 5 <i>Date:</i> </b> 01/02/2018</p>
+                                            <p class="text-blue"><b>status: <i>draft</i></b></p>
+                
+                                            <span class="text-lblack ">
+                
+                                                <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                                1
+                                            </span>
+                                            <a href="./view_intervention.html" class="text-blue">view details</a>
+                                            <a onclick="deleteIncident('red-flag',1)"><i class="fas fa-trash-alt text-red "></i></a>
+                
+                                        </div>
+                                        <div><b>Description : </b>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                                augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                                tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                                tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                            </p>
+                                        </div>
+                
+                                    </section>
+
                 </div>
             </div>
         </div>
-  
+
     </div>
 </body>
-
+<script src="../static/js/main.js"></script>
 </html>
