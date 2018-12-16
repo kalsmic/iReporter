@@ -14,7 +14,7 @@
 
 .wrapper {
 	display: grid;
-	grid-template-areas: "header" "main-page" "footer";
+	grid-template-areas: "header" "main-page";
 	grid-gap: 20px;
 	min-height: 100vh;
 }
@@ -55,11 +55,6 @@ header {
 	grid-column: 1 /span 3;
 	grid-row: 2;
 	padding: 20px;
-}
-
-footer {
-	grid-area: footer;
-	height: 70px;
 }
 
 .menu {
