@@ -11,6 +11,7 @@ document.getElementById("login-form").onsubmit=function() {
  }  
 
 
+
 function deleteIncident(incidentType, delStatus, hideContent) {
 
     if (delStatus == 1) {
