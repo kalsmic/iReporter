@@ -41,7 +41,7 @@
                             </a>
                         </li>
                         <li class="menu_item">
-                            <a href="view_interventions.html" class="menu_link">
+                            <a href="view_red-flags.html" class="menu_link">
                                 <i class="fa fa-eye" aria-hidden="true"> Interventions</i>
                             </a>
                         </li>
@@ -51,87 +51,124 @@
                 <div class="page-content border-round-lg">
                     <h3 class="text-blue">View Red-flags page</h3>
                     <hr>
-                    <div class="table border-radius-30p">
+                    
 
-                        <table>
+                    <section class="flex-col-sp-btn border-radius-30p border-round-lg" id="sec-1">
 
-                            <thead>
-                                <tr>
-                                    <th>Description</th>
-                                    <th>Created On</th>
-                                    <th>Status</th>
-                                    <th>Location</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                    <td>12/12/2018</td>
-                                    <td>draft</td>
-                                    <td>0.34,32.52</td>
-                                    <td>
-                                        <a href="view_red-flag.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sed accumsan nisl in purus luctus, vel molestie enim tempus.</td>
-                                    <td>12/12/2018</td>
-                                    <td>draft</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view_red-flag.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Nam vel dolor sagittis augue iaculis egestas vitae et leo.</td>
-                                    <td>12/12/2018</td>
-                                    <td>resolved</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view_red-flag.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Cras scelerisque turpis id gravida porta.</td>
-                                    <td>12/12/2018</td>
-                                    <td>under investigation</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view_red-flag.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sed eu odio a nibh tincidunt dapibus at ultrices dolor.</td>
-                                    <td>12/12/2018</td>
-                                    <td>rejected</td>
-                                    <td>12.23,12.23</td>
-                                    <td>
-                                        <a href="view_red-flag.html"><i class="fas fa-eye"></i></a>
-                                        <a href="edit_incident.html"><i class="fas fa-edit text-lblue"></i></a>
-                                        <a href="delete-red-flag.html"><i class="fas fa-trash-alt text-red"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                            <div class="flex-row-sp-btn">
+                                <p class="text-blue"><b>No. 1 <i>Date:</i> </b> 01/03/2018</p>
+    
+                                <p class="text-blue"><b>status: <i>draft</i></b></p>
+    
+                                <span class="text-lblack">
+    
+                                    <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                    1
+                                </span>
+                                <a href="./view_red-flag.html" class="text-blue">view details</a>
+                                <a onclick="deleteIncident('red-flag',1,'true')"><i class="fas fa-trash-alt text-red "></i></a>
+    
+                            </div>
+                            <div><b>Description : </b>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                    augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                    tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                    tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                </p>
+                            </div>
+    
+                        </section>
+                        <section class="flex-col-sp-btn border-radius-30p border-round-lg" id="sec-2">
+    
+                                <div class="flex-row-sp-btn">
+                                   
+                                    <p class="text-blue"><b>No. 2 <i>Date:</i> </b> 01/02/2018</p>
+                                    <p class="text-red"><b>status: <i>Rejected</i></b></p>
+        
+                                    <span class="text-lblack ">
+        
+                                        <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                        1
+                                    </span>
+                                    <a href="./view_red-flag.html" class="text-blue">view details</a>
+                                    <a onclick="deleteIncident('red-flag',0,2)"><i class="fas fa-trash-alt text-red "></i></a>
+        
+                                </div>
+                                <div><b>Description : </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                        augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                        tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                        tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                    </p>
+                                </div>
+        
+                            </section>
+                            <section class="flex-col-sp-btn border-radius-30p border-round-lg" id="sec-3">
+    
+                                    <div class="flex-row-sp-btn">
+                                       
+                                        <p class="text-blue"><b>No. 3 <i>Date:</i> </b> 01/02/2018</p>
+                                        <p class="text-orange"><b>status: <i>Under Investigations !
+                                        </i></b></p>
+            
+                                        <span class="text-lblack ">
+            
+                                            <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                            1
+                                        </span>
+                                        <a href="./view_red-flag.html" class="text-blue">view details</a>
+                                        <a onclick="deleteIncident('red-flag')"><i class="fas fa-trash-alt text-red "></i></a>
+            
+                                    </div>
+                                    <div><b>Description : </b>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                            augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                            tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                            tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                        </p>
+                                    </div>
+            
+                                </section>
+                                <section class="flex-col-sp-btn border-radius-30p border-round-lg" id="sec-4">
+    
+                                        <div class="flex-row-sp-btn">
+                                           
+                                            <p class="text-blue"><b>No. 4 <i>Date:</i> </b> 01/02/2018</p>
+                                            <p class="text-green"><b>status: <i>Resolved !
+                                            </i></b></p>
+                
+                                            <span class="text-lblack ">
+                
+                                                <img class="bg-blue  img-circle-small" src="../static/img/profile-pics/user1..jpg">User
+                                                1
+                                            </span>
+                                            <a href="./view_red-flag.html" class="text-blue">view details</a>
+                                            <a onclick="deleteIncident('red-flag',0)"><i class="fas fa-trash-alt text-red "></i></a>
+                
+                                        </div>
+                                        <div><b>Description : </b>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend,
+                                                augue sed bibendum tristique, dui lacus elementum odio, non tincidunt entum odio, non
+                                                tincidunt lectus lacus ac lacus. Nam lacinia est purus. Phasellus placerat massa
+                                                tellus, sed tincidunt ligula laoreet eget. Fusce ornare pulvinar arcu lectus....
+                                            </p>
+                                        </div>
+                
+                                    </section>
+                     
                 </div>
             </div>
         </div>
 
     </div>
 </body>
-<script src="../static/js/googlemaps.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWKk6emaNSe8Z3YpMt8lhwJ_tvH6WFOv4&callback=initMap"></script>
+<script src="../static/js/main.js"></script>
+
 
 
 </html>
