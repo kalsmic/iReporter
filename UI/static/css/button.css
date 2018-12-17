@@ -47,7 +47,7 @@
   .bg-orange {  background: var(--orange); }
   .bg-blue { background: var(--blue); }
   .bg-black { background: var(--black); }
-  .bg-biege { background: var(--biege); }
+  .bg-pink { background: var(--pink); }
   
   
   
@@ -57,6 +57,8 @@
   .bg-lorange { background: var(--light_orange); }
   .bg-lblue { background: var(--light_blue); }
   .bg-lblack { background: var(--light_black); }
+  .bg-lyellow { background: var(--light_yellow); }
+
   
   /* text colors */
   .text-white {  color: var(--white);}
