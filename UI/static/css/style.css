@@ -2,6 +2,10 @@
 
 @import "button.css";
 
+body {
+	background: #AFD275;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -39,10 +43,8 @@ footer {
 }
 
 .logo span:nth-child(odd),
-
-	{
+{
 	color: rebeccapurple;
-
 }
 
 
@@ -104,22 +106,10 @@ footer {
 	border: none;
 	border-bottom: 1px solid #888875;
 	padding-top: 1.2em;
-	border: none;
-	border-bottom: 1px solid #888875;
 	background: transparent;
 }
 
-input:required:invalid,
-input:focus:invalid {
-	-moz-box-shadow: none;
-	box-shadow: none;
-	border-right: 1px red;
-}
 
-input:required:invalid,
-input:focus:invalid {
-	border-right: 1px green;
-}
 
 input:required:valid {
 	border-right: 1px red;
@@ -147,10 +137,11 @@ input:required:valid {
 }
 
 @media screen and (min-width:500px) {
-	
-        .wrapper {
-	background: #AFD275;
-        }
+
+	.wrapper {
+		background: #AFD275;
+	}
+
 	.menu {
 		display: flex;
 		flex-direction: row;
@@ -334,8 +325,8 @@ hr {
 	justify-content: space-between;
 	align-content: center;
 	padding: 1.25em;
-	align-content: justify;
 	flex-wrap: wrap;
+	align-content: justify;
 }
 
 .img-circle-small {
