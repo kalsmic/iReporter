@@ -9,7 +9,7 @@
 .wrapper {
 	margin: 0 auto;
 	font: 1.2em Helvetica, arial, sans-serif;
-	background: #AFD275;
+	background: white;
 }
 
 .wrapper {
@@ -147,7 +147,10 @@ input:required:valid {
 }
 
 @media screen and (min-width:500px) {
-
+	
+        .wrapper {
+	background: #AFD275;
+        }
 	.menu {
 		display: flex;
 		flex-direction: row;
