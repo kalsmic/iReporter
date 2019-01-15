@@ -1,96 +1,23 @@
-var marker
-
-function myMap() {
- var mapProp = {
-  center: new google.maps.LatLng(0.580584670867283, 32.53452250031705),
-
-  zoom: 14,
- };
-
- var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
- google.maps.event.addListener(map, 'click', function(event) {
-  selectedLocation = event.latLng
-
-  if (marker && marker.setMap) {
-   // hides already created marker
-   marker.setMap(null);
-  }
-  // set marker on map
-  marker = new google.maps.Marker({
-   position: selectedLocation,
-   map: map,
-  });
-  // Animate marker
-
-  marker.setAnimation(google.maps.Animation.BOUNCE);
-  setTimeout(function() {
-   marker.setAnimation(null);
-  }, 750);
 
 
+var mymap = L.map('googleMap').setView([0.580584670867283, 32.53452250031705], 13);
 
-  var geocoder = new google.maps.Geocoder;
-  var infowindow = new google.maps.InfoWindow;
-  var latlng = {
-   lat: selectedLocation.lat(),
-   lng: selectedLocation.lng()
-  }
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+  maxZoom: 18,
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  id: 'mapbox.streets'
+}).addTo(mymap);
 
-  geocoder.geocode({
-   'location': latlng
-  }, function(results, status) {
-   if (status === 'OK') {
-    if (results[0]) {
-     map.setZoom(11);
-     // hide already existing markers
-     if (marker && marker.setMap) {
-      marker.setMap(null);
-     }
-     marker = new google.maps.Marker({
-      position: latlng,
-      map: map
-     });
-     var address_name = results[0].formatted_address
-     infowindow.setContent(address_name);
-     console.log(address_name)
+var popup = L.popup();
 
-     document.getElementById("set_location").value = "Latitude : " + selectedLocation.lat() + " Longitude : " + selectedLocation.lng()
-     infowindow.open(map, marker);
-
-    } else {
-     window.alert('Please Select a valid location');
-    }
-   } else {
-    window.alert('Please check your internet failed due to: ' + status);
-   }
-  });
-
- });
+function onMapClick(e) {
+  popup
+    .setLatLng(e.latlng)
+    .setContent("Location Coordinates: " + e.latlng.toString())
+    .openOn(mymap);
+    document.getElementById("set_location").value = "Latitude : " + e.latlng.lat + " Longitude : " + e.latlng.lng
 }
 
-function initMap() {
- var myLatLng = {
-  lat: 0.34238730737481193,
-  lng: 32.589311599731445
- };
-
- var map = new google.maps.Map(document.getElementById('googleMap'), {
-  zoom: 17,
-  center: myLatLng,
-  disableDefaultUI: true
- });
-
- var marker = new google.maps.Marker({
-  position: myLatLng,
-  map: map,
-  label: {
-    fontWeight: 'bold',
-    color:"#333",
-    background:"white",
-    fontSize:"13px",
-    text: "Kobil Kamwokya Kampala Uganda",
-  },
- });
-
-}
+mymap.on('click', onMapClick);
